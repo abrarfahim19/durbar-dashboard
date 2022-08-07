@@ -1,0 +1,61 @@
+.grid-item {
+  background-color: lightgray;
+}
+.grid-container {
+  display: grid;
+  gap: 40px;
+}
+.section-1 {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+.section-1 .grid-item {
+  height: 166px;
+  background-color: cornsilk;
+}
+.section-2 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.section-2 .grid-item {
+  height: 419px;
+  background-color: powderblue;
+}
+.section-2 #grid-item-2-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.section-2 #grid-item-2-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.section-2 #grid-item-2-9 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.section-2 #grid-item-2-10 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.section-2 #grid-item-2-11 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.section-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.section-3 .grid-item {
+  height: 535px;
+  background-color: thistle;
+}
+.section-3 #grid-item-3-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.section-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-4 .grid-item {
+  height: 422px;
+  background-color: blanchedalmond;
+}

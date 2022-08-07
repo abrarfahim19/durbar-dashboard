@@ -1,0 +1,110 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151523;
+  color: #56baca;
+  height: 60px;
+  width: auto;
+}
+
+nav p {
+  display: inline;
+  padding: 5px;
+}
+
+.thin-border {
+  border: 1px solid #151523;
+}
+
+.margin-left-25 {
+  margin-left: 25px;
+}
+.margin-right-25 {
+  margin-right: 25px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 200px;
+}
+
+.icon {
+  height: 25px;
+  width: auto;
+  color: #56baca;
+}
+
+nav input {
+  height: 36px;
+  width: 167px;
+  background: #151523;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  /* border: 1px solid #2d3c41; */
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+nav button {
+  background-color: #151523;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.status {
+  height: 22px;
+  width: auto;
+  padding: 0px 10px;
+  background-color: #20655d;
+}
+.serch-field {
+  border: 1px solid #2d3c41;
+}
+
+.alignable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-field {
+  height: 25px;
+  border: 1px solid #2d3c41;
+  background-color: #2d3c41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151523;
+  height: 36px;
+  width: 36px;
+  border: 1px solid #2d3c41;
+  border-radius: 5px;
+}
+
+.avatarnav img {
+  height: 32px;
+  width: auto;
+}

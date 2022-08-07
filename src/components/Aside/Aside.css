@@ -1,0 +1,15 @@
+.sidebar {
+  width: 300px;
+  background-color: #151523;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3,
+h4,
+p {
+  margin: 10px;
+  color: white;
+}

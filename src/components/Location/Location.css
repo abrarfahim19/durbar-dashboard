@@ -1,0 +1,39 @@
+/* img {
+  max-width: 100%;
+  height: 250px;
+} */
+
+.bg-image img {
+  height: 250px;
+  width: 250px;
+}
+
+.location {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.location-details {
+  align-self: flex-start;
+}
+
+.location-button {
+  width: 200px;
+  height: 36px;
+  background-image: linear-gradient(to right, #343346, #2d3c41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.location-button a {
+  font-size: medium;
+  color: aqua;
+  text-decoration: none;
+}
