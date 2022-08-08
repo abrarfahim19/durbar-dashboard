@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  background-image: linear-gradient(to right, #343346, #2d3c41);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flexbox-item1 {
+  flex-grow: 0;
+}
+.flexbox-item2 {
+  flex-grow: 1;
+}

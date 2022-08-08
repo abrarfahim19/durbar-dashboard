@@ -1,0 +1,8 @@
+.section-6 {
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 40px;
+}
+.section-6 .grid-item {
+  height: 535px;
+  background-color: powderblue;
+}

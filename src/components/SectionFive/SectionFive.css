@@ -1,0 +1,8 @@
+.section-5 {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+.section-5 .grid-item {
+  height: 420px;
+  background-color: cornsilk;
+}

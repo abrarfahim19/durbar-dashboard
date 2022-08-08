@@ -1,5 +1,12 @@
 import React from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import {
+  PieChart,
+  Pie,
+  Sector,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+} from "recharts";
 
 const Chart22 = () => {
   const data = [
@@ -11,7 +18,7 @@ const Chart22 = () => {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
   return (
-    <div style={{ backgroundColor: "black", width: "100%", height: 300 }}>
+    <div style={{ backgroundColor: "#21202e", width: "100%", height: "100%" }}>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={800} height={400}>
           <Pie
@@ -31,6 +38,7 @@ const Chart22 = () => {
               />
             ))}
           </Pie>
+          <Tooltip />
         </PieChart>
       </ResponsiveContainer>
     </div>

@@ -1,0 +1,8 @@
+.section-4 {
+  grid-template-columns: 1fr 1fr 2fr;
+  column-gap: 40px;
+}
+.section-4 .grid-item {
+  height: 420px;
+  background-color: #21202e;
+}

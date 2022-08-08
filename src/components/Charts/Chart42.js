@@ -11,8 +11,9 @@ import {
   ReferenceDot,
   ResponsiveContainer,
 } from "recharts";
+import "./Charts.css";
 
-const Chart21 = () => {
+const Chart42 = () => {
   const data = [
     {
       name: "A",
@@ -58,26 +59,28 @@ const Chart21 = () => {
     },
   ];
   return (
-    <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
-    >
+    <div>
       <div className="chart-header">
         <h1>GRAPH</h1>
         <div className="">
           <BiDownArrow className="margin-right-25 icon" />
         </div>
       </div>
+      <div className="flex-container">
+        <div className="flex-item">
+          <h2>7,656</h2>
+          <p>Explored</p>
+        </div>
+        <div className="flex-item">
+          <h3>+73%</h3>
+        </div>
+      </div>
 
-      <div style={{ backgroundColor: "#21202e", width: "100%", height: 300 }}>
+      <div style={{ backgroundColor: "#21202e", width: "100%", height: 250 }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             width={500}
-            height={400}
+            height={200}
             data={data}
             margin={{
               top: 10,
@@ -102,10 +105,10 @@ const Chart21 = () => {
             </defs>
 
             {/* <CartesianGrid /> */}
-            <XAxis dataKey="name" />
-            <YAxis />
+            {/* <XAxis dataKey="name" /> */}
+            {/* <YAxis /> */}
             <Tooltip />
-            <Legend verticalAlign="middle" align="right" height={36} />
+            {/* <Legend verticalAlign="middle" align="right" height={36} /> */}
             <Area
               type="monotone"
               dataKey="uv"
@@ -141,4 +144,4 @@ const Chart21 = () => {
   );
 };
 
-export default Chart21;
+export default Chart42;

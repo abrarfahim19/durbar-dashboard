@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.chart-details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box p {
+  margin: 0px;
+  color: #56baca;
+}
+
+.chart-header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  margin: 0px 15px;
+  padding: 2px;
+  border: 1px solid #56baca;
+}
+.chart-header h1,
+p {
+  margin: 5px 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.chart-header h1 {
+  font-size: xx-large;
+}
+
+.four-part {
+  display: grid;
+  /* height: 200px; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.four-part-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3d4647;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.flex-item1 {
+  flex: 100%;
+}
+
+.biggest-text {
+  font-size: 45px;
+  font-weight: 300;
+  color: whitesmoke;
+}
+
+.two-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* Widget Style */
+#grid-item-6-3 {
+  background-color: #21202e;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+}
+#grid-item-6-3 header {
+  margin: 18px 22px;
+}
+#grid-item-6-3 .widget-body {
+  color: #5d858d;
+  margin: 10px;
+  margin-left: 40px;
+  position: relative;
+}
+.widget-body .content {
+  padding-left: 30px;
+  border-left: 1px solid #56baca;
+}
+.content.no-border-left {
+  border-left: 0;
+}
+.content p {
+  padding: 5px 0px;
+}
+.content p:first-of-type {
+  padding-top: 5px;
+}
+#grid-item-6-3 .name {
+  color: #56baca;
+}
+#grid-item-6-3 .text {
+  color: #bbf4ed;
+}
+#grid-item-6-3 .icon {
+  padding: 7px 9px;
+  background-color: #21202e;
+  border: 1px solid #56baca;
+  position: absolute;
+  left: -18px;
+}
+#grid-item-6-3 .image-boxes {
+  display: flex;
+}
+#grid-item-6-3 .box {
+  width: 60px;
+  height: 59px;
+  background: #241729;
+  border: 1px solid #322339;
+  margin-right: 12px;
+}
+.rocket-section,
+.report-section {
+  flex-grow: 0;
+}
