@@ -6,6 +6,8 @@ import {
   BsFileText,
 } from "react-icons/bs";
 import "./Charts.css";
+import avatar1 from "../../media/avatar1.png";
+
 const Chart63 = () => {
   return (
     <div>
@@ -38,9 +40,15 @@ const Chart63 = () => {
                 <span className="name">Joshua Parker</span> added 3 recruits
               </p>
               <div className="image-boxes">
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
+                <div className="box table-avatar">
+                  <img src={avatar1} alt="" />
+                </div>
+                <div className="box table-avatar">
+                  <img src={avatar1} alt="" />
+                </div>
+                <div className="box table-avatar">
+                  <img src={avatar1} alt="" />
+                </div>
               </div>
               <p>2 HOURS AGO</p>
             </div>

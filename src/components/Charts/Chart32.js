@@ -1,99 +1,79 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import { BiDownArrow } from "react-icons/bi";
 
 const Chart32 = () => {
   const data = {
     series: [
       {
-        name: "Marine Sprite",
-        data: [44, 55, 41, 37, 22, 43, 21],
-      },
-      {
-        name: "Striking Calf",
-        data: [53, 32, 33, 52, 13, 43, 32],
-      },
-      {
-        name: "Tank Picture",
-        data: [12, 17, 11, 9, 15, 11, 20],
-      },
-      {
-        name: "Bucket Slope",
-        data: [9, 7, 5, 8, 6, 9, 4],
+        data: [34, 44, 54, 21, 12, 43, 33, 23, 66, 66, 58],
       },
     ],
     options: {
-      chart: {
-        type: "bar",
-        height: 350,
-        stacked: true,
-        dropShadow: {
-          enabled: true,
-          blur: 1,
-          opacity: 0.25,
+      xAxis: {
+        labels: {
+          show: "false",
+          style: {
+            colors: "white",
+          },
         },
       },
-      plotOptions: {
-        bar: {
-          horizontal: true,
-          barHeight: "60%",
-        },
+      chart: {
+        type: "line",
+        height: 350,
+      },
+      stroke: {
+        curve: "stepline",
       },
       dataLabels: {
         enabled: false,
       },
-      stroke: {
-        width: 2,
-      },
       title: {
-        text: "Compare Sales Strategy",
-      },
-      xaxis: {
-        categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
-      },
-      yaxis: {
-        title: {
-          text: undefined,
+        text: "Orion Chart",
+        align: "bottom",
+        style: {
+          color: "#4FACA1",
         },
       },
-      tooltip: {
-        shared: false,
-        y: {
-          formatter: function (val) {
-            return val + "K";
-          },
-        },
-      },
-      fill: {
-        type: "pattern",
-        opacity: 1,
-        pattern: {
-          style: [
-            "circles",
-            "slantedLines",
-            "verticalLines",
-            "horizontalLines",
-          ], // string or array of strings
-        },
-      },
-      states: {
+      markers: {
         hover: {
-          filter: "none",
+          sizeOffset: 4,
         },
       },
       legend: {
-        position: "right",
-        offsetY: 40,
+        labels: {
+          colors: "#ffffff",
+          useSeriesColors: true,
+        },
+        position: "top",
+        offsetY: 0,
+        height: 15,
       },
     },
   };
   return (
-    <div>
-      <ReactApexChart
-        options={data.options}
-        series={data.series}
-        type="bar"
-        height={350}
-      />
+    <div
+      style={{
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
+      <div className="chart-header">
+        <h1>GRAPH</h1>
+        <div className="">
+          <BiDownArrow className="margin-right-25 icon" />
+        </div>
+      </div>
+      <div id="chart">
+        <ReactApexChart
+          options={data.options}
+          series={data.series}
+          type="line"
+          height={350}
+        />
+      </div>
     </div>
   );
 };

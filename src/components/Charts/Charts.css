@@ -139,3 +139,47 @@ p {
 .report-section {
   flex-grow: 0;
 }
+
+/* Table CSS */
+
+table {
+  border: 1px solid gray;
+  margin-left: 2%;
+  width: 96%;
+  border-collapse: collapse;
+}
+
+th,
+tr {
+  color: #56baca;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #5d858d;
+}
+
+.table-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151523;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #2d3c41;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.table-avatar img {
+  height: 60px;
+  width: auto;
+}
+
+.rounded-icon {
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}

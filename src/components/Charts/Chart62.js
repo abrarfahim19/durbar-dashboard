@@ -12,8 +12,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import "./Charts.css";
+import up from "../../media/up.png";
+import down from "../../media/down.png";
+import stars from "../../media/stars.png";
 
-const Chart42 = () => {
+const Chart62 = () => {
   const data = [
     {
       name: "A",
@@ -69,68 +72,37 @@ const Chart42 = () => {
     >
       <div className="chart-header">
         <h1>GRAPH</h1>
+        <div
+          style={{
+            border: "1px solid gray",
+            width: "200px",
+            height: "50px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            paddingRight: "5px",
+          }}
+          className=""
+        >
+          <h4>Month</h4>
+          <BiDownArrow className=" icon" />
+        </div>
         <div className="">
-          <BiDownArrow className="margin-right-25 icon" />
-        </div>
-      </div>
-      <div
-        style={{
-          height: "200px",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "stretch",
-        }}
-        className=""
-      >
-        <div
-          style={{
-            flex: "1",
-            border: "1px solid gray",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-          className=""
-        >
-          <h2>7,656</h2>
-          <p>Explored</p>
-        </div>
-        <div
-          style={{
-            flex: "1",
-            border: "1px solid gray",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          className=""
-        >
-          <h3
-            style={{
-              backgroundImage: "linear-gradient(to right, #343346, #2d3c41)",
-              padding: "10px 20px",
-            }}
-          >
-            +73%
-          </h3>
+          <BiDownArrow className="margin-right-25 margin-left-25 icon" />
         </div>
       </div>
 
       <div
         style={{
-          marginLeft: "auto",
           backgroundColor: "#21202e",
-          width: "92%",
-          height: 250,
+          width: "100%",
+          height: 300,
         }}
       >
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             width={500}
-            height={200}
+            height={400}
             data={data}
             margin={{
               top: 10,
@@ -155,10 +127,10 @@ const Chart42 = () => {
             </defs>
 
             {/* <CartesianGrid /> */}
-            {/* <XAxis dataKey="name" /> */}
-            {/* <YAxis /> */}
+            <XAxis dataKey="name" />
+            <YAxis />
             <Tooltip />
-            {/* <Legend verticalAlign="middle" align="right" height={36} /> */}
+            <Legend verticalAlign="middle" align="right" height={36} />
             <Area
               type="monotone"
               dataKey="uv"
@@ -190,8 +162,97 @@ const Chart42 = () => {
           </AreaChart>
         </ResponsiveContainer>
       </div>
+      <div
+        style={{
+          marginBottom: "15px",
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+        className="stat"
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className="stat-item"
+        >
+          <p style={{ fontSize: "small", fontWeight: "400", color: "yellow" }}>
+            U-V index
+          </p>
+          <h2
+            style={{ fontSize: "xx-large", fontWeight: "400", color: "white" }}
+            className=""
+          >
+            42%
+          </h2>
+          <img style={{ width: "50px" }} src={up} alt="" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className="stat-item"
+        >
+          <p style={{ fontSize: "small", fontWeight: "400", color: "yellow" }}>
+            V-B INDEX
+          </p>
+          <h2
+            style={{ fontSize: "xx-large", fontWeight: "400", color: "white" }}
+            className=""
+          >
+            73%
+          </h2>
+          <img style={{ width: "50px" }} src={down} alt="" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className="stat-item"
+        >
+          <p style={{ fontSize: "small", fontWeight: "400", color: "yellow" }}>
+            MAGNITUDE
+          </p>
+          <h2
+            style={{ fontSize: "xx-large", fontWeight: "400", color: "white" }}
+            className=""
+          >
+            1,379
+          </h2>
+          <img style={{ width: "50px" }} src={up} alt="" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className="stat-item"
+        >
+          <p style={{ fontSize: "small", fontWeight: "400", color: "yellow" }}>
+            RATING
+          </p>
+          <img style={{ width: "100px" }} src={stars} alt="" />
+          <p
+            style={{ fontSize: "small", fontWeight: "400", color: "yellow" }}
+            className=""
+          >
+            +2
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Chart42;
+export default Chart62;

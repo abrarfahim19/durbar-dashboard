@@ -14,34 +14,65 @@ import Chart33 from "../Charts/Chart33";
 import Chart43 from "../Charts/Chart43";
 import Chart51 from "../Charts/Chart51";
 import "./Dashboard.css";
+import { BsCalendar2MonthFill, BsGraphUp } from "react-icons/bs";
+import { CgMenuGridO } from "react-icons/cg";
 
 const Dashboard = () => {
   return (
-    <div className="board-conatiner">
-      <h1>DASHBOARD</h1>
-      <p>HOME-DASHBOARD</p>
-      <div class="grid-container">
-        <SectionOne />
+    <div>
+      <div
+        style={{
+          margin: "5px 20px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+        className="dashboard-top"
+      >
+        <div className="path">
+          <h1 style={{ color: "white", margin: "5px", fontWeight: "300" }}>
+            DASHBOARD
+          </h1>
+          <p
+            style={{
+              color: "#56BACA",
+              margin: "5px",
+              fontWeight: "300",
+              fontSize: "15px",
+            }}
+          >
+            HOME--DASHBOARD
+          </p>
+        </div>
+        <div className="path-icon">
+          <BsCalendar2MonthFill className="icon margin-left-25" />
+          <CgMenuGridO className="icon margin-left-25" />
+          <BsGraphUp className="icon margin-left-25 margin-right-25" />
+        </div>
       </div>
-      <div className="grid-container">
-        <SectionTwo />
-      </div>
-      <div className="grid-container">
-        <SectionThree />
-      </div>
-      <div className="grid-container">
-        <SectionFour />
-      </div>
-      <div className="grid-container">
-        <SectionFive />
-      </div>
-      <div className="grid-container">
-        <SectionSix />
-      </div>
-      <div className="grid-container">
-        <SectionSeven />
-      </div>
-      {/* <div class="grid-container section-2">
+      <div className="board-conatiner">
+        <div class="grid-container">
+          <SectionOne />
+        </div>
+        <div className="grid-container">
+          <SectionTwo />
+        </div>
+        <div className="grid-container">
+          <SectionThree />
+        </div>
+        <div className="grid-container">
+          <SectionFour />
+        </div>
+        <div className="grid-container">
+          <SectionFive />
+        </div>
+        <div className="grid-container">
+          <SectionSix />
+        </div>
+        <div className="grid-container">
+          <SectionSeven />
+        </div>
+        {/* <div class="grid-container section-2">
         <div class="grid-item" id="grid-item-2-1">
           <Chart21 />
         </div>
@@ -76,6 +107,7 @@ const Dashboard = () => {
           11
         </div>
       </div> */}
+      </div>
     </div>
   );
 };

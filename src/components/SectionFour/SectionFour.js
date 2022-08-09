@@ -1,6 +1,7 @@
 import React from "react";
 import Chart41 from "../Charts/Chart41";
 import Chart42 from "../Charts/Chart42";
+import Chart43 from "../Charts/Chart43";
 import "./SectionFour.css";
 
 const SectionFour = () => {
@@ -13,7 +14,7 @@ const SectionFour = () => {
         <Chart42 />
       </div>
       <div class="grid-item" id="grid-item-4-3">
-        3
+        <Chart43 />
       </div>
     </div>
   );
