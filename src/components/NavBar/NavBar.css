@@ -1,4 +1,4 @@
-nav {
+.navtop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,7 +9,7 @@ nav {
   width: 100%;
 }
 
-nav p {
+.navtop p {
   display: inline;
   padding: 5px;
 }
@@ -46,7 +46,7 @@ nav p {
   color: #56baca;
 }
 
-nav input {
+.navtop input {
   height: 36px;
   width: 167px;
   background: #151523;
@@ -60,7 +60,7 @@ nav input {
   color: white;
 }
 
-nav button {
+.navtop button {
   background-color: #151523;
   border-top-style: hidden;
   border-right-style: hidden;

@@ -17,7 +17,7 @@ const NavBar = () => {
     console.log("Text");
   };
   return (
-    <nav>
+    <nav className="navtop">
       <div className="left">
         <img className="logo margin-left-25" src={logo} alt="" />
         <BiMenu className="icon margin-left-25" />

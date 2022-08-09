@@ -1,14 +1,15 @@
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
-import Page from "./components/Page/Page";
+// import SideBar from "../src/components/SideBar/SideBar";
+import Page from "../src/components/Page/Page";
+import "./components/NavBar/NavBar.css";
+import NavBar from "../src/components/NavBar/NavBar";
+import Side from "./components/Side/Side";
 
 function App() {
   return (
     <div className="">
       <NavBar />
       <Page />
-      <Footer />
     </div>
   );
 }
